@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Irid.CSS Official Documentation</title>
+    <link href="https://w4schools.ebp11.repl.co/style.css" rel="stylesheet" type="text/css" />
+		<link href='irid.css' rel='stylesheet' type='text/css'/>
+  </head>
+  <body>
+    <script src="script.js"></script>
+		<div style='width: 100%; background-color: navy; color: white; height: 50px; font-size: 30pt;' class='header'>
+			<b style='font-size: 34pt;' onclick='window.open("/index.html", "_self");'>Iridium Documentation</b><a href='css.html' style='background-color: gold;'>Irid.CSS</a>&bull;<a href='js.html'>Irid.JS</a>
+		</div>
+		<div id='content' style='margin: 3px;'>
+			<h1>Irid.CSS Intro</h1>
+			<p>Irid.CSS is a CSS framework that allows anybody to easily style HTML documents without creating a lot of CSS. HTML Buttons can be converted. You can put an entire page in Dark Mode.</p>
+			<p>Irid.CSS also shortens your code. Rather than typing <code contenteditable>style="display: none;"</code> to hide an element by default, you can put class="e-hide".</p>
+			<h2>Getting access to all of the elements in Irid.CSS</h2>
+			<p>Irid.CSS is not included with HTML. You put in the following code in the <code contenteditable>&lt;head&gt;</code> tag of your HTML.</p>
+			<code contenteditable>&lt;link href="https://www.aeonic.eu.org/iridium/irid.css" rel="stylesheet" type="text/css"&gt;</code>.<br>
+			<p>Alternatively, you can use <code>@import</code> in standard CSS to include it as well.</p>
+			<code contenteditable>@import url("https://aeonic.ebp11.repl.co/iridium/irid.css/")</code>.<br>
+			<h1>Hide elements</h1>
+			<p>With Irid.CSS, you can easily add one class to hide an HTML element. Put in the <code contenteditable>e-hide</code> class into any HTML element. We made a blue, 15 pixel square with a div.</p>
+			<h3>HTML Code</h3>
+			<code contenteditable>
+				&lt;div class="e-hide" style="height: 15px; width: 15px; background-color: blue;"&gt;&lt;/div&gt;
+			</code><br>
+			<h3>Result</h3>
+			<div class='e-hide' style='height: 15px; width: 15px; background-color: blue; color: blue;' title='Result'>R</div>
+			<h3>Explanation</h3>
+			The div did not show since we put the class which hid it. But how do we show it?<br>
+			<h2>Show elements</h2>
+			<p>In the previous example, we were able to hide a <code>&lt;div&gt;</code> element. But how do we show it?</p>
+			<p>Irid.CSS has a class for it!</p>
+			<p>The <code>e-block</code> class shows the otherwise hidden element. Now for the <code>&lt;div&gt;</code>.</p>
+			<h3>HTML Code</h3>
+			<code>
+				&lt;div class="e-block" style="height: 15px; width: 15px; background-color: blue;"&gt;&lt;/div&gt;
+			</code>
+			<h3>Result</h3>
+			<div class='e-block' style='height: 15px; width: 15px; background-color: navy; color: navy;' title='Result'></div>
+			<h3>Explanation</h3>
+			The div showed since we put a class that prevented it from disappearing.
+			<h2>Transparent elements</h2>
+			<p>With the <code>e-transparent</code> class, you can make an element disappear, but the text stay. Let us make a button with the text Click me. We will use the class to make you only see the text. If you hover over the button, you can see a border to see where the entire element is. You can use the <code>e-transparent-no-border</code> class to remove the border on hover. If you really want to keep the element secret, use the <code>e-transparent-full</code> class. (That is one easy way to keep all your secrets!) (For <code>e-transparent-full</code>, you may also use <code>e-secret</code>. Both have no support for images.)</p>
+			<h3>HTML Code</h3>
+			<code>
+				&lt;button class="e-transparent"&gt;Click me&lt;/button&gt;
+			</code>
+			<h3>Result</h3>
+			<button class='e-transparent'>Click me</button>
+			<h3>HTML Code</h3>
+			<code>
+				&lt;button class="e-transparent-no-border"&gt;Click me&lt;/button&gt;
+			</code>
+			<h3>Result</h3>
+			<button class='e-transparent-no-border'>Click me</button>
+			<h3>HTML Code</h3>
+			<code>
+				&lt;button class="e-transparent-full"&gt;Click me&lt;/button&gt;
+			</code>
+			<h3>Result</h3>
+			<button class='e-transparent-full' title="This is the transparent button's location">Click me</button>
+			<h1>Dark Mode on a <code>&lt;div&gt;</code></h1>
+			<p>It is nighttime, but it feels strange. The webpage is showing up too white. You want to add a dark mode to your website. With Irid.CSS, that becomes easy, since there is a class for that. The <code>e-dark-mode</code> class turns the background black, and the text white. All images come in greyscale.</p>
+			<p>Press a button to make the result in dark mode.</p>
+			<p><button onclick='document.getElementById("exampleLight").style.display="block"; document.getElementById("lightCode").style.display="block";'>See in light mode</button><button onclick='document.getElementById("exampleDark").style.display="block";'>See in dark mode</button>
+			<div id='exampleLight' style='border: 1px solid black; display:none;'>
+				<img src='https://www.w3schools.com/howto/img_nature_wide.jpg'>
+				<h1>This is a heading</h1>
+				<p>This is a paragraph</p>
+				<code><pre>
+&lt;div class="e-light-mode"&gt;
+  &lt;img src="nature.jpg"&gt;
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/div&gt;
+			</pre></code>
+			</div>
+			
+			<div id='exampleDark' style='display: none;' class='e-dark-mode'>
+				<img src='https://w3schools.com/howto/img_nature_wide.jpg'>
+				<h1>This is a heading</h1>
+				<p>This is a paragraph</p>
+				<code><pre>
+&lt;div class="e-dark-mode"&gt;
+  &lt;img src="nature.jpg"&gt;
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;/div&gt;
+			</pre></code>
+			</div>
+			<h1>Draw some simple shapes</h1>
+			<p>Irid.CSS has some classes you can put on <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements to display shapes. The shapes are 20px and black by default, so to customise them, you <u>must</u> add CSS.</p>
+			<h2>Circles/Ovals</h2>
+			<p>You can use the <code>e-circle</code> class to create a circle or oval.</p>
+			Code: <code>&lt;span class="e-circle"&gt;&lt;/span&gt;</code><br>
+			Result: <span class='e-circle' style='color: black;'>cir</span>
+			<h2>Squares/Rectangles</h2>
+			<p>You can use the <code>e-rect</code> class to create a square or rectangle.</p>
+			Code: <code>&lt;span class="e-rect"&gt;&lt;/span&gt;</code><br>
+			Result: <span class='e-rect' style='color: black;'>sq</span>
+			<h2>Triangle</h2>
+			<p>You can use the <code>e-triangle</code> class to create a triangle. (Note that it supports only <code>&lt;div&gt;</code> elements.)</p>
+			Code: <code>&lt;div class="e-triangle"&gt;&lt;/div&gt;</code><br>
+			Result: <div class='e-triangle' style='color: black;'></div>
+			<h1>More properties (reference)</h1>
+			<h2>e-focus-remove</h2>
+			<p>Removes border on focus.</p>
+			<h3>Example</h3>
+			<h4>Code</h4>
+			<code contenteditable class='e-focus-remove'>
+				&lt;input type="text" class="e-focus-remove"/&gt;
+			</code>
+			<h4>Result</h4>
+			<input type="text" class="e-focus-remove"/>
+
+			<h2>e-focus-show</h2>
+			<p>Removes border on focus.</p>
+			<h3>Example</h3>
+			<h4>Code</h4>
+			<code contenteditable class='e-focus-remove'>
+				&lt;input type="text" class="e-focus-remove"/&gt;
+			</code>
+			<h4>Result</h4>
+			<input type="text" class="e-focus-show"/>
+		</div>
+  </body>
+</html>

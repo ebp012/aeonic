@@ -1,0 +1,63 @@
+var dragItem2 = document.querySelector("#win1");
+    var container2 = document.querySelector("#win1container2");
+
+    var active2 = false;
+    var currentX2;
+    var currentY2;
+    var initialX2;
+    var initialY2;
+    var xOffset2 = 0;
+    var yOffset2 = 0;
+
+    container2.addEventListener("touchstart", dragStart2, false);
+    container2.addEventListener("touchend", dragEnd2, false);
+    container2.addEventListener("touchmove", drag, false);
+
+    container2.addEventListener("mousedown", dragStart2, false);
+    container2.addEventListener("mouseup", dragEnd2, false);
+    container2.addEventListener("mousemove", drag, false);
+
+    function dragStart2(e) {
+      if (e.type === "touchstart") {
+        initialX2 = e.touches[0].clientX - xOffset2;
+        initialY2 = e.touches[0].clientY - yOffset2;
+      } else {
+        initialX2 = e.clientX - xOffset2;
+        initialY2 = e.clientY - yOffset2;
+      }
+
+      if (e.target === dragItem2) {
+        active2 = true;
+      }
+    }
+
+    function dragEnd2(e) {
+      initialX2 = currentX2;
+      initialY2 = currentY2;
+
+      active2 = false;
+    }
+
+    function drag2(e) {
+      if (active2) {
+      
+        e.preventDefault();
+      
+        if (e.type === "touchmove") {
+          currentX2 = e.touches[0].clientX - initialX2;
+          currentY2 = e.touches[0].clientY - initialY2;
+        } else {
+          currentX2 = e.clientX - initialX2;
+          currentY2 = e.clientY - initialY2;
+        }
+
+        xOffset2 = currentX2;
+        yOffset2 = currentY2;
+
+        setTranslate(currentX2, currentY2, dragItem2);
+      }
+    }
+
+    function setTranslate(xPos, yPos, el) {
+      el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
+    }

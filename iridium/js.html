@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Irid.JS Official Documentation</title>
+    <link href="https://w4schools.ebp11.repl.co/style.css" rel="stylesheet" type="text/css" />
+		<link href='irid.css' rel='stylesheet' type='text/css'/>
+		<script src="https://www.aeonic.eu.org/irid.js"></script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+		<div style='width: 100%; background-color: navy; color: white; height: 50px; font-size: 30pt;' class='header'>
+			<b style='font-size: 34pt;' onclick='window.open("/index.html", "_self");'>Iridium Documentation</b><a href='js.html' style='background-color: gold;'>Irid.JS</a>&bull;<a href='css.html'>Irid.CSS</a>
+		</div>
+		<div id='content' style='margin: 3px;'>
+			<h1>Irid.JS Intro</h1>
+			<p>Irid.JS is a simple JavaScript framework by Aeonic. It helps shorten your code as elements appear and disappear, and makes it look cleaner and easier to read. In addition, it is perfect for beginners because it uses simple language that we naturally use in human speech. You can also set program defaults, make random numbers easier, and much much more!</p>
+			<h2>Getting access to all of the elements in Irid.JS</h2>
+			<p>Irid.JS is not included with HTML or JavaScript. You put in the following code in the bottom of the <code contenteditable>&lt;body&gt;</code> tag of your HTML.</p>
+			<code contenteditable>&lt;script src="https://www.aeonic.eu.org/iridium/irid.js"&gt;&lt;/script&gt;</code><br>
+			<h1>Reference</h1>
+			<h2>eShow()</h2>
+			<p>The function eShow() displays an element.</p>
+			<h3>Code</h3>
+			<code contenteditable>&lt;button class="e-transparent" onclick="eShow('ex1btn');"&gt;Click me!&lt;/button&gt;&lt;br/&gt;&lt;button class="e-hide e-transparent" id='ex1btn'&gt;I just appeared!&lt;/button&gt;</code><br>
+			<h3>Result</h3>
+			<button class="e-transparent" onclick="eShow('ex1btn');">Click me!</button><br/><button class="e-hide e-transparent" id="ex1btn">I just appeared!</button>
+			<h2>eHide()</h2>
+			<p>The function eHide() hides an element.</p>
+			<h3>Code</h3>
+			<code contenteditable>&lt;button class="e-transparent" onclick="eHide('ex2btn');"&gt;Click me!&lt;/button&gt;&lt;br/&gt;&lt;button class="e-transparent" id='ex2btn'&gt;Click above to make me disappear!&lt;/button&gt;</code><br>
+			<h3>Result</h3>
+			<button class="e-transparent" onclick="eHide('ex2btn');">Click me!</button><br/><button class="e-transparent" id="ex2btn">Click above to make me disappear!</button>
+		</div>
+  </body>
+</html>

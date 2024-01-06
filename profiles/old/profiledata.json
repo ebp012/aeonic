@@ -1,0 +1,8 @@
+{
+"profiles":[
+  {"names":["daseaturtle","ebp012"], "combination":["4321","1234"], "allower":["29497513910652490397","48112959837082048697"]},  
+	{"name":"ebp012", "combination":"1234", "allower":"48112959837082048697"},
+	{"name":"lolguineapig", "combination":"5678", "allower":"12764787846358441471"},
+	{"name":"prav", "combination":"8765", "allower":"45095080578985454453"},
+]
+}

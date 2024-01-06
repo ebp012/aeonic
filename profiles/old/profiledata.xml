@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profiles>
+	<user>
+		<name>daseaturtle</name> <!--The name of the user-->
+		<combination>4321</combination> <!--the lock code of the user-->
+		<allower>2949751-3910652-490397</allower> <!--The recovery key-->
+		<plan>Platinum</plan>
+	</user>
+	<user>
+		<name>ebp012</name> <!--The name of the user-->
+		<combination>1234</combination> <!--the lock code of the user-->
+		<allower>4811295-9837082-048697</allower> <!--The recovery key-->
+		<plan>Platinum</plan>
+	</user>
+	<user>
+		<name>lolguineapig</name> <!--The name of the user-->
+		<combination>5678</combination> <!--the lock code of the user-->
+		<allower>1276478-7846358-441471</allower> <!--The recovery key-->
+		<plan>Platinum</plan>
+	</user>
+	<user>
+		<name>prav</name> <!--The name of the user-->
+		<combination>8765</combination> <!--the lock code of the user-->
+		<allower>4509508-0578985-454453</allower> <!--The recovery key-->
+		<plan>Platinum</plan>
+	</user>
+	<!--Samples: 
+		54673257461630679457
+		40206835204840513073
+		71755440315342536873
+		27542476619900900873
+	-->
+</profiles>

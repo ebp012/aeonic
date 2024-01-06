@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aeonic Login Form</title>
+		<script src='https://aeonic.ebp11.repl.co/iridium/irid.js'></script>
+	</head>
+	<body>
+		<script>
+			function checkUname() {
+				var unamse = document.getElementById("uname");
+				var unane = unamse.value;
+				if (unane == "ebp11") {
+					window.open("/profiles/ebp11/dashboard/", "_self");
+					return true;
+				}
+				else {
+					eHide("uname");
+					setTimeout(5000, function(){
+						eShow("uname");
+					});
+				}
+			}
+		</script>
+		<center>
+			<h1>Aeonic Login</h1>
+			<h3>Log in with your Aeonic ID</h3>
+			<input type='text' id='uname' required='required'/>
+			<!--<input type='password' required='required'/>-->
+			<button onclick='checkUname();'>Log in</button>
+		</center>
+		<script>
+			
+			function checkDatabase() {
+				var xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			      const pswdInfo = this.responseText;
+			    }
+			  };
+			  xhttp.open("GET", "profiledata.json", true);
+			  xhttp.send();
+				if (1+1 == 2) { //work in progress, for now using repl.it auth
+					var obj = JSON.parse(pswdInfo);
+					return true;
+				}
+				else {
+					alert("You have entered the incorrect password or username.");
+					return false;
+				}
+			}
+			
+		</script>
+	</body>
+</html>

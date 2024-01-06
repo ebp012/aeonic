@@ -1,0 +1,131 @@
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/*DISPLAY PROPERTIES*/
+.e-hide {
+	display: none;
+}
+.e-block {
+	display: block;
+}
+/*PAGE THEME*/
+.e-dark-mode {
+	background-color: black;
+	color: white;
+	filter: grayscale(100%);
+}
+.e-light-mode {
+	background-color: white;
+	color: black;
+	filter: grayscale(0%);
+}
+/*TRANSPARENCY PROPERTIES*/
+.e-transparent {
+	background-color: transparent;
+	border: none;
+}
+.e-transparent:hover {
+	border: 1px solid black;
+}
+.e-transparent-no-border {
+	background-color: transparent;
+	font-family: georgia;
+	border: none;
+}
+.e-transparent-full, .e-secret {
+	background-color: transparent;
+	font-family: georgia;
+	border: none;
+	color: transparent;
+}
+.e-transparent-full img, .e-secret img {
+	border: none;
+	height: 0px;
+	width: 0px;
+}
+/*ALTERNATIVE HEADING TAGS*/
+h7 {
+	font-weight: bolder;
+}
+h8 {
+	font-weight: bold;
+}
+/*SHAPES*/
+.e-circle, .e-oval {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: black;
+}
+.e-rect, .e-square {
+	height: 20px;
+	width: 20px;
+	border-radius: 0px;
+	background-color: black;
+}
+.e-triangle {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid black;
+	padding: 0px;
+}
+.e-focus-remove:focus {
+	outline: 0px solid transparent;
+	border: none;
+}
+code {
+	font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+	background-color: rgb(189, 189, 189);
+}
+.e-focus-show {
+	border: none;
+	outline: none;
+}
+.e-focus-show:hover {
+	border: 1px solid silver;
+}
+.e-focus-show:focus {
+	border: 2px solid black;
+}
+pre.nat {
+	font-family: inherit;
+}
+pre.san {
+	font-family: helvetica;
+}
+pre.ser {
+	font-family: times;
+}
+/* COLOURS */
+.e-blue.e-background { /*Blue*/
+	background-color: #003366;
+}
+.e-blue { /*Blue*/
+	color: #003366;
+}
+.e-beach.e-background { /*Dark Cyan*/
+	background-color: #008B8B;
+}
+.e-beach { /*Dark Cyan*/
+	color: #008B8B;
+}
+.e-tabs-top {
+	height: 40px;
+	width: 100%;
+	opacity: 85%;
+	background-color: #c0c0c0;
+	position: fixed;
+	margin: 0;
+	top: 0;
+	left: 0;
+}
+.e-tabs-bottom {
+	height: 40px;
+	width: 100%;
+	opacity: 85%;
+	background-color: #c0c0c0;
+	position: fixed;
+	margin: 0;
+	bottom: 0;
+	left: 0;
+}

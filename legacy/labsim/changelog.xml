@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transform.xsl"?>
+<versions>
+	<pagetitle>LabSim Changelog</pagetitle>
+	<version name="Future Plans">
+		<item><value>+ Air pressure</value></item>
+		<item><value>+ Saving to cloud or computer</value></item>
+		<item><value>+ Varieties of poop</value></item>
+	</version>
+	<version name="2.1 - The Dirty Update">
+		<item><value>+ Varieties of pee</value></item>
+		<item><value>+ Tab, window and split-screen support</value></item>
+		<item><value>+ Flexbox</value></item>
+		<item><value>~ Replace AtomicSmash with Ultrahammer, to separate element parts</value></item>
+		<item><value>+ Ultrahammering of saltwater, ocean, sand and redsand</value></item>
+		<item><value>+ Anti-strange matter</value></item>
+		<item><value>+ Mercury+oxygen=netherite</value></item>
+		<item><value>~ Move all anions and cations to quantum</value></item>
+		<item><value>- Supernatural</value></item>
+		<item><value>+ Rankine measurement</value></item>
+		<item><value>+ Separation between Imperial (UK) and Customary (US)</value></item>
+		<item><value>~ Fix polished diorite not deleting polish</value></item>
+	</version>
+	<version name="2.0.1">
+		<item><value>+ Ability to quickly get elements without clicking (customer complaint)</value></item>
+		<item><value>+ Fix diorite not changing colour when polished</value></item>
+		<item><value>+ Fix some fullscreen issues</value></item>
+	</version>
+	<version name="2.0 - The Enormous Update">
+		<item><value>+ Redesign</value></item>
+		<item><value>+ Polish tool for diorite and granite</value></item>
+		<item><value>+ Sidebar with gadgets</value></item>
+		<item><value>+ Circular, cooler-looking pixels</value></item>
+		<item><value>+ Consistency with design language of other products</value></item>
+		<item><value>+ Mobile support</value></item>
+		<item><value>+ Linguistic settings</value></item>
+		<item><value>~ Updated demonstrations</value></item>
+		<item><value>+ Fullscreen support</value></item>
+		<item><value>+ New app for iOS</value></item>
+		<item><value>~ Work still being done on macOS</value></item>
+		<item><value>+ Resize support</value></item>
+		<item><value>+ Redesign</value></item>
+		<item><value>+ Ability to hide sidebar</value></item>
+		<item><value>+ Personalisation</value></item>
+		<item><value>+ Change pixel shape</value></item>
+		<item><value>+ More pixels can now fit onscreen</value></item>
+		<item><value>+ Sandbox area resizes on different screen sizes</value></item>
+	</version>
+	<version name="1.6.1">
+		<item><value>~ Add discontinuation warning</value></item>
+		<item><value>NOTE: We may just replace this with a LabSim 2.0</value></item>
+	</version>
+	<version name="1.6 - The Particle Physics Update">
+		<item><value>~ Change name to LabSim</value></item>
+		<item><value>+ Particle Physics</value></item>
+		<item><value>+ More metals</value></item>
+		<item><value>+ More gases</value></item>
+		<item><value>+ Deuterium, Tritium, Tetrahydrogen</value></item>
+		<item><value>+ Element ores</value></item>
+		<item><value>+ Netherite (alloy of platinum and gold)</value></item>
+		<item><value>+ Strange Matter</value></item>
+		<item><value>+ New weapons</value></item>
+		<item><value>+ New star types</value></item>
+		<item><value>+ Customise colour of light</value></item>
+		<item><value>+ Powder forms of frozen gases</value></item>
+		<item><value>~ Change solids from WALL to STURDYPOWDER</value></item>
+		<item><value>+ Cactus</value></item>
+		<item><value>+ Slowheater, slowcooler</value></item>
+		<item><value>+ Superheater, supercooler</value></item>
+		<item><value>+ Hyperheater, hypercooler</value></item>
+		<item><value>+ Refrigerator, freezer, microwave</value></item>
+		<item><value>+ Pee</value></item>
+		<item><value>+ Toilet and Urinal</value></item>
+		<item><value>+ Colour elements</value></item>
+	</version>
+	<version name="1.5 - The Perfectionist Update, Part 3">
+		<item><value>~ Fix bugs with antimatter</value></item>
+		<item><value>+ Merge Ketchup mod with base game</value></item>
+		<item><value>+ Add back art</value></item>
+		<item><value>+ Frozen dirt</value></item>
+		<item><value>+ Graupel</value></item>
+		<item><value>+ Metal Gasses</value></item>
+		<item><value>+ Mercury Cycle</value></item>
+		<item><value>+ Smash added to toolbar</value></item>
+		<item><value>+ Solid forms of gases</value></item>
+		<item><value>+ Ultraheater, ultracooler</value></item>
+		<item><value>+ Antisupernatural</value></item>
+		<item><value>+ Poop</value></item>
+	</version>
+	<version name="1.4 - The Perfectionist Update, Part 2">
+		<item><value>+ Mercury</value></item>
+		<item><value>+ Bromine</value></item>
+		<item><value>+ Oxozone</value></item>
+		<item><value>+ Human meat</value></item>
+		<item><value>+ Alcohols</value></item>
+		<item><value>- Antisupernatural</value></item>
+		<item><value>+ Portals</value></item>
+		<item><value>- Art</value></item>
+	</version>
+	<version name="1.3 - The Fanon Update">
+		<item><value>+ Antisupernatural</value></item>
+		<item><value>+ Elements from fandomium.fandom.com</value></item>
+	</version>
+	<version name="1.2 - The Perfectionist Update, Part 1">
+		<item><value>+ Lavagas</value></item>
+		<item><value>~ Antimeat updates</value></item>
+	</version>
+	<version name="1.1 - The Antimatter Update">
+		<item><value>+ Antimatter</value></item>
+		<item><value>+ Antimeat</value></item>
+	</version>
+	<version name="1.0 - The Fork Update - Public Beta Release 2">
+		<item><value>+ Full website, no longer a Sandboxels mod</value></item>
+	</version>
+	<version name="0.9 - The Supernatural Update - Public Beta Release 1">
+		<item><value>+ Supernatural</value></item>
+	</version>
+
+</versions>

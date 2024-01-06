@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BestPenguin 10 - E11</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="style.css" type='text/css'>
+	<noscript>
+		The E11 Website reqires JavaScript. Please enable JavaScript in your browser or use a different browser that includes JavaScript functionality.
+	</noscript>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div id='content'>
+<div class="header">
+  <img src='bp10.png' style='height: 32; width: 32px;'></img>
+</div>
+
+<div id="navbar">
+  <a href="index.html"><img src='adtrue.png' style='height: 16; width: 48px;' id='hiddenlogo'></img></a>
+	<a class='active' href="javascript:void(0)"><img src='bp10.png' style='height: 19px; width: 19px;'></img> BestPenguin 10</a>
+	<a href="bestpenguin-9.html"><img src='bp09.png' style='height: 19px; width: 19px;'></img> BestPenguin 9</a>
+	<a href="adtrue.html"><img src='AdTrue.png' style='height: 19px; width: 19px;'></img> AdTrue</a>
+</div>
+
+<h1><center>Welcome to E11 AdTrue</center></h1>
+<center>
+	AdTrue lets you profit from every link click. Users will be shown an ad, and they'll be able to skip it after 5 seconds. 
+</center>
+</div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</div>
+</body>
+</html>
