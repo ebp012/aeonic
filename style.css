@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@200&display=swap');
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+}
+@font-face {
+    font-family: 'Future';
+    src: ('/assets/Futura.ttf'), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  align-items: center;
+  background-color: var(--bg-color);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;  
+  max-width: 916px;
+  width: calc(100% - 20px);
+	animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes hadeIn {
+  70% { opacity: 0.7; }
+	75% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+@keyframes cardFadeEffect {
+  65% { opacity: 0.65; }
+	73% { opacity: 0.73; }
+  79% { opacity: 0.79; }
+	91% { opacity: 0.91; }
+	93% { opacity: 0.93; }
+	98% { opacity: 0.98; }
+}
+
+#cards:hover > .card::after {
+	animation: cardFadeEffect 5s;}
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 260px;
+  flex-direction: column;
+  position: relative;
+  width: 300px;  
+}
+
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card::before,
+.card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.card::before, .container:before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.card::after, .container:after {  
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.4),
+    transparent 40%
+  );
+  z-index: 1;
+}
+
+
+.card > .card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+	background-repeat: no-repeat;
+}
+.card-content:before {
+	
+}
+
+#precision:after {
+	background-image: url(assets/step2prev.png);
+	filter: contrast(20%);
+}
+
+
+
+
+.card-info {
+	z-index: 50000;
+}
+/* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
+
+h1, h2, h3, h4, span {
+  color: rgb(240, 240, 240);
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+i {  
+  color: rgb(240, 240, 240);
+}
+
+.card-image {
+  align-items: center;
+  display: flex;
+  height: 140px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-image > i {
+  font-size: 6em;
+  opacity: 0.25;
+}
+
+.card-info-wrapper {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  gap: 10px;
+}
+
+.card-info > i {  
+  font-size: 1em;
+  height: 20px;
+  line-height: 20px;
+}
+
+.card-info-title > h3 {
+  font-size: 1.1em;
+  line-height: 20px;
+}
+
+.card-info-title > h4 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85em;
+  margin-top: 8px;
+}
+
+/* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
+
+@media(max-width: 1000px) {
+  body {
+    align-items: flex-start;  
+    overflow: auto;
+  }
+  
+  #cards {    
+    max-width: 1000px;
+    padding: 10px 0px;
+		margin-top: 50px;
+  }
+  
+  .card {
+    flex-shrink: 1;
+    width: calc(50% - 4px);
+  }
+}
+
+@media(max-width: 500px) {
+  .card {
+    height: 180px;
+  }
+  
+  .card-image {
+    height: 80px;  
+  }
+  
+  .card-image > i {
+    font-size: 3em;
+  }
+    
+  .card-info-wrapper {
+    padding: 0px 10px;
+  }
+  
+  .card-info > i { 
+    font-size: 0.8em; 
+  }
+  
+  .card-info-title > h3 {
+    font-size: 0.9em;
+  }
+
+  .card-info-title > h4 {
+    font-size: 0.8em;
+    margin-top: 4px;
+  }
+}
+
+@media(max-width: 320px) {
+  .card {
+    width: 100%;
+  }
+}
+
+/* -- ↓ ↓ ↓ YouTube link styles ↓ ↓ ↓ -- */
+
+#youtube-link {
+  bottom: 10px;
+}
+
+#youtube-link > i {
+  color: rgb(239, 83, 80);
+}
+
+#source-link {
+  bottom: 60px;
+}
+
+#source-link > i {
+  color: rgb(94, 106, 210);
+}
+
+.link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;  
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link > i, .link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.link > span {
+  color: white;
+}
+#navbar {
+	width: 100%;
+	height: 50px;
+	opacity: 80%;
+	background-color: black;
+	background-image: linear-gradient(to right, #191970, black, black, black, black, black, black, black, black, black, black, black, black, black, silver, silver);
+	backdrop-filter: blur(90px);
+	position: fixed;
+	z-index: 111111;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	animation: slideDown 1.5s forwards;
+	box-shadow: 2px 2px 4px #000000;
+}
+#langbar {
+	width: 100%;
+	height: 50px;
+	opacity: 80%;
+	background-color: black;
+	background-image: linear-gradient(to right, #191970, black, black, black, black, black, black, black, black, black, black, black, black, black, silver, silver);
+	backdrop-filter: blur(90px);
+	position: fixed;
+	z-index: 111111;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	animation: fadeIn 4.1s;
+	box-shadow: 2px 2px 4px #000000;
+	transform: rotate3d(0.1, 0.1, 0, 6deg);
+}
+a.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+	display: none;
+}
+#navbar a, #langbar a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Oxygen';
+	font-size: 28px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	color: white;
+	z-index: 5000;
+	opacity: 70%;
+	height: 50px;
+	font-weight: bold;
+	animation: fadeIn 1s;
+}
+#navbar a:hover::before, #langbar a:hover::before {
+	content: "• ";
+}
+#navbar a:hover::after, #langbar a:hover::after {
+	content: " •";
+}
+#navbar img, #langbar img {
+	height: 33px;
+	width: 33px;
+	animation: slideIn 1s forwards;
+}
+#navbar a:hover, #langbar a:hover {
+	background-color: white;
+	color: grey;
+	border-radius: 15px;
+	animation: hadeIn 4s infinite;
+}
+@media (min-width: 1px) {
+  .card::before {
+	  background: radial-gradient(
+	    884px circle at var(--mouse-y) var(--mouse-x), 
+	    rgba(0, 0, 0, 0.32),
+	    transparent 40%
+	  );
+		outline: 0.5px dotted grey;
+	}
+	body {
+	  background-color: rgb(211,208,255);
+	}
+	.card {
+	  background-color: rgba(0, 0, 0, 0.1);
+	  border-radius: 10px;
+	  cursor: pointer;
+	  display: flex;
+	  height: 260px;
+	  flex-direction: column;
+	  position: relative;
+	  width: 300px;  
+	}
+	.card::after {  
+	  background: radial-gradient(
+	    600px circle at var(--mouse-y) var(--mouse-x), 
+	    rgba(0, 0, 0, 0.25),
+	    transparent 40%
+	  );
+	}
+	.card > .card-content {
+  	background-color: rgb(232,232,232);
+	}
+	h1, h2, h3, h4, span {
+	  color: rgb(20, 20, 20);
+	  font-family: "Oxygen", sans-serif;
+	  font-weight: 400;
+	  margin: 0px;
+	}
+	
+	i {  
+	  color: rgb(20, 20, 20);
+	}
+	.link > span {
+  	color: black;
+	}
+	.card-info-title > h4 {
+	  color: rgba(0, 0, 0, 0.5);
+	  font-size: 0.85em;
+	  margin-top: 8px;
+	}
+	.link {
+	  background-color: rgba(0, 0, 0, 0.05);
+	  border: 1px solid rgba(0, 0, 0, 0.1);
+	  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.1);
+	}
+	.link:hover {
+		border: 1px solid rgba(0, 0, 0, 0.2);
+	}
+}
+
+/* THE TIMELINE */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-900px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+		transform: translateY(-350px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#title {
+	animation: slideIn 2s forwards;
+}
+
+.divimg {
+	width: 50%;
+}
+
+@media (prefers-color-scheme: light) {
+	#card{box-shadow: 2px 2px 2px rgba(0,0,0, 0.1);}
+}
+
+@media screen(max-width: 500px) {
+	img.headim {
+		height: 250px;
+	}
+}
+div p, div ul, div ol, li {
+	font-family: 'Oxygen';
+	font-weight: 200;
+}
+html {
+	scroll-behavior: smooth;
+}
