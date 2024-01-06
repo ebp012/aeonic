@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The E11 Coorporation - Official Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Calibri;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src='https://x.ebp11.repl.co/logo.png'></img>
+  <p><strong>The <u>E11</u> Coorporation</strong></p>
+</div>
+
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="rocket.html">BestPenguin RocketPro</a>
+  <a href="x.html" class='active'>BestPenguin X</a>
+</div>
+
+<div class="content">
+  <p>BestPenguin X</p>
+	<p>Still with all you need</p></p>
+	<br><br><br><hr><br>
+	<h3>Download</h3>
+	<p><mark>We do not advise downloading BestPenguin X. Support for BestPenguin X and RocketPro will end on 31 December 2021.</mark><b>Download:</b><a href='//x.ebp11.repl.co/desktop/index.html' download='BestPenguinX'><button>Download BestPenguin X Proffessional</button></a></p>
+	<p><mark>BestPenguin X Gamers Edition will lose support on 31 December 2023,</mark><b>Download:</b><a href='//x.ebp11.repl.co/desktop/index.html' download='BestPenguinX'><button>Download BestPenguin X Proffessional</button></a></p>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

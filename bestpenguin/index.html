@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Portal</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.1/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<link rel="icon" type="image/x-icon" href="/assets/logo_16x16.png">
+	<script src="https://www.aeonic.eu.org/irid.js"></script>
+	<script>window.open("https://penguin.aeonic.eu.org/", "_blank");</script>
+</head>
+
+<body onload='doStuff();'>
+  <script src="/script.js"></script>
+	<script src="https://elephant.ai/static/js/chatbot.js" id="900515047e844461b0d30b1d38818ede"></script>
+	<div id="navbar">
+		<a href='/index.html'><img src='/assets/logo_32x32.png'/></a>
+		&bull;
+		&bull;
+		<a href='/labsim/'>LabSim</a>
+		&bull;
+		&bull;
+		<a href='/mw/'>Gaming</a>
+		&bull;
+		&bull;
+		<a href='/iridium/'>Iridium</a>
+		&bull;
+		&bull;
+		<a href='/endeavour/'>Endeavour</a>
+		&bull;
+		&bull;
+		<a href='updates.html'>Update Tracker</a>
+
+		<span id="google_translate_element" style='float: right;'></span>
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+		}
+		</script>
+		
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</div>
+	<center><h1 style='color: white;' id='title'>Penguin&nbsp;</h1></center>
+	<div id="cards">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <i class="fa-duotone fa-apartment"></i>
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <i class="fa-duotone fa-apartment"></i>
+          <div class="card-info-title">
+            <h3>Support status</h3>  
+            <h4>BestPenguin 9.1 ends support on 31 July 2023.</h4>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+        <i class="fa-duotone fa-unicorn"></i>
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <i class="fa-duotone fa-unicorn"></i>
+          <div class="card-info-title">
+            <h3>In development</h3>  
+            <h4>Penguin X is still in development, not complete yet, unfinished.</h4>
+          </div>    
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+      <div class="card-image">
+      </div>
+      <div class="card-info-wrapper">
+        <div class="card-info">
+          <i class="fa-duotone fa-blender-phone"></i>
+          <div class="card-info-title">
+            <h3>Portal to All</h3>  
+            <h4>Penguin is a web app that acts as a portal to all your Aeonic and other apps and services.</h4>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+	<a href='css.html'>
+	  <div class="card">
+	    <div class="card-content">
+	      <div class="card-image">
+	        <i class="fa-duotone fa-person-to-portal"></i>
+	      </div>
+	      <div class="card-info-wrapper">
+	        <div class="card-info">
+	          <i class="fa-duotone fa-person-to-portal"></i>
+	          <div class="card-info-title">
+	            <h3>Easy to use</h3>  
+	            <h4>The user interface is humanist and is simple to navigate by first glance.</h4>
+	          </div>    
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</a>
+	<a href='js.html'>
+		<div class="card" id='jscard'>
+	    <div class="card-content">
+	      <div class="card-image">
+	        <i class="fa-duotone fa-person-to-portal"></i>
+	      </div>
+	      <div class="card-info-wrapper">
+	        <div class="card-info">
+	          <i class="fa-duotone fa-person-to-portal"></i>
+	          <div class="card-info-title">
+	            <h3>Irid.JS</h3>  
+	            <h4>An intuitve JavaScript library</h4>
+	          </div>    
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</a>
+	<a href='https://repl.it/@ebp11/iridium'>
+		<div class="card" id='ircard'>
+	    <div class="card-content">
+	      <div class="card-image">
+	        <i class="fa-duotone fa-person-to-portal"></i>
+	      </div>
+	      <div class="card-info-wrapper">
+	        <div class="card-info">
+	          <i class="fa-duotone fa-person-to-portal"></i>
+	          <div class="card-info-title">
+	            <h3>Iridium OS</h3>  
+	            <h4>A nice little OS in C++ you can mess around and test C++ applications with.</h4>
+	          </div>    
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</a>
+</div>
+<script>
+/*
+	var csscardt = document.getElementById("csscard");
+	var jscardt = document.getElementById("jscard");
+	var ircardt = document.getElementById("ircard");
+	csscardt.onClick=eOpen("css.html");
+	jscardt.onClick=eOpen("js.html");
+	ircardt.onClick=eOpen("https://replit.com/@ebp11/iridium")
+*/
+</script>
+</body>
+</html>
